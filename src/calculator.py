@@ -23,8 +23,7 @@ class Calculator:
                     message += f"Bienvenu(e) {username}\n"
         except FileNotFoundError:
             print("Votre fichier .env n'était pas trouvé! Le nom d'utilisateur ne sera pas montré dans l'application.")
-        finally:
-            return message
+        return message
 
     def addition(self, v1, v2):
         """ Add 2 values """
